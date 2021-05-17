@@ -13,7 +13,7 @@ set si				"smart indent"
 let mapleader = ","
 let g:mapleader = ","
 
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c\ %p%%\ %P
+set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{CurDir()}%h\ \ \ Line:\ %l/%L:%c\ \ %p%%\(%P\)
 
 function! CurDir()
     let curdir = substitute(getcwd(), '/home/mikespook/', "~/", "g")
